@@ -97,7 +97,7 @@
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a href="#">Otrzymaj wycenę</a>
+                                        <a href="#Kontakt">Otrzymaj wycenę</a>
                                     </div>
                                 </div>
                             </div>
@@ -631,17 +631,17 @@
             </div>
         </div>
 
-    <div class="contact_form_quote">
+    <div class="contact_form_quote" id="Kontakt">
         <div class="container">
             <div class="row">
                 <div class="col-xl-5 col-lg-6">
                     <div class="form_wrap">
                             <h2>Otrzymaj biznesową propozycję</h2>
-                            <form action="#">
-                                <input type="text" placeholder="Imię" >
-                                <input type="email" placeholder="Email" >
-                                <textarea name="#" id="" cols="30" rows="10" placeholder="Wiadomość" ></textarea>
-                                <button class="boxed-btn3">Wyślij</button>
+                            <form action="formularz.php" method="POST">
+                                <input type="text" name="imie" placeholder="Imię" >
+                                <input type="email" name="email" placeholder="Email" >
+                                <input type="text" name="tresc"  placeholder="Wiadomość" >
+                                <input type="submit" class="boxed-btn3">
                             </form>
                     </div>
                 </div>
